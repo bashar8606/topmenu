@@ -1,0 +1,42 @@
+@import "../../styles/util";
+
+.section {
+  --pt: 17px;
+  --pb: 17px;
+  position: relative;
+  padding: var(--pt) 0 var(--pb);
+  background-color: #F6F9FA;
+}
+
+
+.categories {
+  &_track {
+    overflow-x: auto;
+    display: flex;
+    padding: 10px;
+  }
+
+  &_item {
+    display: inline-block;
+    box-shadow: 0 0 10px rgb(0 0 0 / 11%);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+    &__icon {
+      --size: 65px;
+      margin-bottom: 10px;
+      width: var(--size);
+      background-color: #eee;
+      height: var(--size);
+
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: 10px;
+      text-align: center;
+      line-height: 1;
+    }
+  }
+}

@@ -1,0 +1,114 @@
+@import "../../styles/util";
+
+.card {
+    // background-color: rgba(255, 252, 162, 0.50);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    transition: 0.25s all ease;
+    color: #3E4581;
+    box-shadow: 0 1px 3px rgba(0, 0, -29, 0.12), 0 -6px 0px rgba(0, 0, 0, -29.76);
+    box-shadow: 0 1px 3px rgba(0, 0, -29, 0.12), 0 -6px 0px rgba(0, 0, 0, -29.76);
+
+
+    @include lg {
+        padding: size(40) size(46);
+    }
+
+    &:hover {
+        background-color: #FFD54F;
+        color: #fff;
+
+        :global(.btn) {
+            background-color: #FF2600;
+            border: 1px solid transparent;
+            color: #fff;
+        }
+
+    }
+
+    &_head {
+        text-align: center;
+
+        h3 {
+
+            font-size: 34px;
+            margin-bottom: 30px;
+
+            @include lg {
+                font-size: size(52);
+                font-weight: 500;
+            }
+
+        }
+
+        h4 {
+            font-size: 23px;
+            margin-bottom: 15px;
+
+            @include lg {
+                font-size: size(30);
+                font-weight: 400;
+            }
+        }
+
+        line-height: 1;
+
+
+
+    }
+
+    &_body {
+        margin-bottom: 35px;
+
+        @include lg {
+            margin-bottom: 50px;
+        }
+
+
+        ul {
+            padding-left: 0px;
+
+            li {
+                padding: 5px 0px;
+                position: relative;
+                list-style: none;
+                --spacing: 30px;
+                padding-left: var(--spacing);
+                font-size: 16px;
+
+                &::after {
+                    content: "";
+                    --size: 13px;
+                    width: var(--size);
+                    height: var(--size);
+                    background-color: #3E4581;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-image: var(--tick-light);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 50%;
+                }
+            }
+        }
+
+    }
+
+    &_footer {
+        :global(.btn) {
+            border-radius: 5px;
+            border: 1px solid #000;
+            color: #000;
+            font-size: 15px;
+
+            font-weight: normal;
+            line-height: 1.3;
+            padding: 20px;
+
+        }
+    }
+}

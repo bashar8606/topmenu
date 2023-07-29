@@ -1,0 +1,53 @@
+@import "../../styles/util";
+
+.section {
+  --pt: 60px;
+  --pb: 60px;
+  padding: var(--pt) 0 var(--pb);
+  position: relative;
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+
+  @include lg {
+    --pt: #{size(100)};
+    --pb: #{size(90)};
+  }
+
+  .row {
+    @include lg {
+      --bs-gutter-x: #{size(76)};
+    }
+  }
+}
+
+
+.title_wrap {
+  max-width: 614px;
+  margin: 0 auto size(100);
+}
+
+.testimonial_swiper {
+  padding: 30px 10px !important;
+
+  // :global {
+  //   .swiper-slide-active {
+  //     .card {
+  //       border: 1px soid red;
+  //     }
+  //   }
+  // }
+
+  :global(.swiper-slide) {
+    opacity: 0.5;
+
+  }
+
+  :global(.swiper-slide-active) {
+    opacity: 1;
+
+  }
+
+
+
+}

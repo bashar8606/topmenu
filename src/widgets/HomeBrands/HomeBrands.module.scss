@@ -1,0 +1,39 @@
+@import "../../styles/util";
+
+.block {
+  --pt: 30px;
+  --pb: 60px;
+  padding: var(--pt) 0 var(--pb);
+  position: relative;
+  border-top: 1px solid rgba(196, 196, 196, 0.3);
+
+  @include lg {
+    --pt: 35px;
+    --pb: 80px;
+  }
+
+  :global(.row) {
+    --bs-gutter-y: 45px;
+  }
+
+  &_item {
+    .ratio {
+      --bs-aspect-ratio: 16%;
+
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.title {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 20px;
+
+  @include lg {
+    font-size: size(22);
+    margin-bottom: size(44);
+  }
+}

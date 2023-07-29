@@ -1,0 +1,9 @@
+@import "../../styles/util";
+
+.section {
+  --pt: 17px;
+  --pb: 60px;
+  position: relative;
+  padding: var(--pt) 0 var(--pb);
+  background-color: #F6F9FA;
+}

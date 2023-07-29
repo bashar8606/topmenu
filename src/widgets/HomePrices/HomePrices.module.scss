@@ -1,0 +1,58 @@
+@import "../../styles/util";
+
+.section {
+  --pt: 60px;
+  --pb: 60px;
+  padding: var(--pt) 0 var(--pb);
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @include lg {
+    --pt: #{size(109)};
+    --pb: #{size(100)};
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+  
+  }
+  .row {
+    @include lg {
+      --bs-gutter-x: #{size(76)};
+    }
+  }
+}
+
+.title_wrap {
+  max-width: 614px;
+margin: 0 auto 50px;
+  @include lg {
+    margin: 0 auto size(100);
+  }
+}
+
+.features {
+  @include lg {
+    --bs-gutter-x: #{size(76)};
+    --bs-gutter-y: #{size(38)};
+  }
+}
+
+.row {
+  margin-bottom: 30px;
+  @include lg{
+    margin-bottom: size(53);
+  }
+}
+
+.shape {
+  position: absolute;
+  --bs-aspect-ratio: 61.84%;
+
+  &_one {
+    width: 90%;
+    left: 0;
+    top: 30%;
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../styles/util";
+
+.section {
+  --pt: 17px;
+  --pb: 17px;
+  position: relative;
+  padding: var(--pt) 0 var(--pb);
+  background-color: #F6F9FA;
+}
+
+
+.form_control {
+  --bs-border-radius: 5px;
+  --bs-border-color: transparent;
+  --bs-body-color: rgb(24, 24, 24);
+  padding: 11px 10px 11px 36px;
+  font-size: 12px;
+  font-weight: 400;
+  box-shadow: 0 0 10px rgb(0 0 0 / 11%);
+}
+
+.form_group {
+  position: relative;
+  .icon {
+    --size:18px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    svg {
+      width: var(--size);
+      height: var(--size);
+    }
+  }
+}

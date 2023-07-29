@@ -1,0 +1,67 @@
+@import "../../styles/util";
+
+.card {
+    background-color: rgba(255, 252, 162, 0.50);
+    padding: 30px;
+    border-radius: 10px;
+    transition: 0.5s all ease;
+
+    @include lg {
+        padding: size(40) size(46);
+    }
+
+    &:hover {
+        background-color: rgba(255, 252, 162);
+        .card_body {
+            h3 {
+                color: #FF2600;
+            }
+        }
+    }
+
+    &_head {
+        font-size: 50px;
+        line-height: 1;
+        color: #fff;
+
+        @include lg {
+            font-size: size(150);
+            font-weight: 700;
+        }
+    }
+
+    &_body {
+        h3 {
+            position: relative;
+            font-size: 20px;
+            font-weight: 500;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+color: #000;
+transition: 0.3s all ease;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                width: 100px;
+                bottom: 0;
+                height: 3px;
+                background-color: #000;
+            }
+
+            @include lg {
+                font-size: size(26);
+            }
+        }
+
+        p {
+            line-height: 1.35;
+            font-size: 17px;
+            margin-bottom: 0;
+
+            @include lg {
+                font-size: size(20);
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@import "../../styles/util";
+
+.card {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 3px rgb(0 0 0 / 10%);
+
+    @include lg {
+        padding: size(30) size(40);
+    }
+
+
+
+    &_body {
+        @include lg {
+            padding: size(30) 0 size(40);
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 0;
+            color: #3E4581;
+        }
+    }
+
+    &_user {
+        h4 {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+}

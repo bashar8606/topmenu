@@ -1,0 +1,93 @@
+@import "../../styles/util";
+
+.section {
+  --pt: 60px;
+  --pb: 60px;
+  padding: var(--pt) 0 var(--pb);
+  position: relative;
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+
+  @include lg {
+    --pt: 100px;
+    --pb: 100px;
+  }
+
+
+  .shape {
+    position: absolute;
+    --bs-aspect-ratio: 100%;
+
+    &_one {
+      width: 68px;
+      left: 56%;
+      top: 30%;
+    }
+
+    &_two {
+      width: 44px;
+      left: 36%;
+      top: 67%;
+    }
+  }
+}
+
+.bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 40.5%;
+  --bs-aspect-ratio: 84.14%;
+}
+
+
+.container {
+  position: relative;
+  z-index: 1;
+
+  @include xxl {
+    max-width: 1600px;
+  }
+}
+
+.block {
+  align-items: center;
+
+  &_img {
+    --bs-aspect-ratio: 94.78%;
+
+    @include lg {
+      width: 93%;
+      margin-left: auto;
+    }
+  }
+
+  &_content {
+    // &__title {}
+
+    .btn_wrap {
+      span {
+        display: inline-block;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #D2D2D2;
+        padding: 0 15px;
+      }
+    }
+
+    p,
+    ul {
+      max-width: 690px;
+    }
+
+    ul {
+      li {
+        margin-right: 26px;
+        display: inline-block;
+        color: #757095;
+      }
+    }
+  }
+}
