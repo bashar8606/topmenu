@@ -11,9 +11,11 @@
 
 .categories {
   &_track {
+    @extend %noscroll;
     overflow-x: auto;
     display: flex;
     padding: 10px;
+
   }
 
   &_item {

@@ -28,10 +28,10 @@ const Menu = ({ props }) => {
 
 
   return (
-    <header className={`${Style.header} ${scroll ? Style.header_scrolled : ""}`}>
-              <Navbar  expand="lg" className="bg-transparent">
-          <Container>
-            <Navbar.Brand href="#">
+    <header className={`${Style.header} d-none d-lg-block ${scroll ? Style.header_scrolled : ""}`}>
+      <Navbar expand="lg" className="bg-transparent">
+        <Container>
+          <Navbar.Brand href="#">
             <div className={Style.nav_brand}>
               <div className={`ratio ${Style.img_wrap}`}>
                 <Image
@@ -43,44 +43,45 @@ const Menu = ({ props }) => {
                 />
               </div>
             </div>
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
-            <Navbar.Offcanvas
-              id={`offcanvasNavbar-expand-lg`}
-              aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
-              placement="end"
-            >
-              <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
-                  Offcanvas
-                </Offcanvas.Title>
-              </Offcanvas.Header>
-              <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">Link</Nav.Link>
-                  <NavDropdown
-                    title="Dropdown"
-                    id={`offcanvasNavbarDropdown-expand-lg`}
-                  >
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Another action
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Something else here
-                    </NavDropdown.Item>
-                  </NavDropdown>
-                </Nav>
-                <div className="d-flex">
-                 
-                  <Button variant="primary">Search</Button>
-                </div>
-              </Offcanvas.Body>
-            </Navbar.Offcanvas>
-          </Container>
-        </Navbar>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
+          <Navbar.Offcanvas
+            id={`offcanvasNavbar-expand-lg`}
+            aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
+            placement="end"
+          >
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
+                Offcanvas
+              </Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+              <Nav className="justify-content-end flex-grow-1 pe-3">
+                <Nav.Link href="#action1">Home</Nav.Link>
+                <Nav.Link href="#action2">Link</Nav.Link>
+                <NavDropdown
+                  title="Dropdown"
+                  id={`offcanvasNavbarDropdown-expand-lg`}
+                >
+                  <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action4">
+                    Another action
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="#action5">
+                    Something else here
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </Nav>
+              <div className="d-flex">
+
+                <Button variant="outline-light">Login</Button>
+                <Button variant="primary">Search</Button>
+              </div>
+            </Offcanvas.Body>
+          </Navbar.Offcanvas>
+        </Container>
+      </Navbar>
     </header>
   );
 };

@@ -288,6 +288,10 @@ p {
     --bs-btn-font-size: 12px;
     --bs-btn-font-weight: 600 !important;
   }
+  &-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-hover-color: #fff;
+}
 }
 
 

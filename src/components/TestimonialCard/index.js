@@ -3,9 +3,9 @@ const TestimonialCard = () => {
   return (
     <div className={style.card}>
       <div className={style.card_stars}>
-      <svg xmlns="http://www.w3.org/2000/svg" width="18.364" height="17" viewBox="0 0 18.364 17">
-  <path id="Star_1" data-name="Star 1" d="M9.182,0l2.3,6.322,6.887.171L12.9,10.572,14.857,17,9.182,13.2,3.507,17l1.961-6.428L0,6.493l6.887-.171Z" fill="#fbb040"/>
-</svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="18.364" height="17" viewBox="0 0 18.364 17">
+          <path id="Star_1" data-name="Star 1" d="M9.182,0l2.3,6.322,6.887.171L12.9,10.572,14.857,17,9.182,13.2,3.507,17l1.961-6.428L0,6.493l6.887-.171Z" fill="#fbb040" />
+        </svg>
 
       </div>
       <div className={style.card_body}>

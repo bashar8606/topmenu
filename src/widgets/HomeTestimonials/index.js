@@ -20,23 +20,20 @@ const HomeTestimonials = ({ props }) => {
             community planning, and may involve stakeholders, foundations,</p>
         </div>
 
-        {/* <div className="row row-cols-lg-3">
-          <div>
-            <TestimonialCard />
-          </div>
-          <div>
-            <TestimonialCard />
-          </div>
-          <div>
-            <TestimonialCard />
-          </div>
-        </div> */}
-
         <div>
 
           <Swiper
-            slidesPerView={3}
             spaceBetween={30}
+            breakpoints={{
+              0: {
+                slidesPerView: 1.2,
+              },
+              768: {
+                slidesPerView: 2,
+              },992: {
+                slidesPerView: 3,
+              },
+            }}
             centeredSlides={true}
             loop={true}
             pagination={{
