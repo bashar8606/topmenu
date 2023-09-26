@@ -25,6 +25,7 @@ $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
   "white": #fff,
+  "success": #B6D88F,
 );
 
 $colors: (
@@ -1046,4 +1047,8 @@ html {
   font-size: size(20);
   font-weight: 500;
   color: #64607D;
+}
+
+.btn-outline-success {
+  color: #B6D88F;
 }

@@ -4,6 +4,7 @@ import Footer from "../src/components/Footer";
 import LoginModal from "../src/components/LoginModal";
 import Menu from "../src/components/Menu";
 import SignupModal from "../src/components/SignupModal";
+import DashLayout from "../src/components/dashboard/DashLayout";
 import AppCategories from "../src/widgets/AppCategories";
 import AppProducts from "../src/widgets/AppProducts";
 import AppSearch from "../src/widgets/AppSearch";
@@ -15,8 +16,9 @@ import HomeTestimonials from "../src/widgets/HomeTestimonials";
 
 const HomePage = (props) => {
   return <main>
-    <Menu />
-    <BottomMenu />
+    {/* <Menu /> */}
+    <DashLayout/>
+    {/* <BottomMenu /> */}
 
     <AppSearch />
     <AppCategories />

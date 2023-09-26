@@ -1,1 +1,92 @@
 @import "../../../styles/util";
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+
+    .sidenav {
+        flex: 0 0 auto;
+        width: 258px;
+        border-right: 1px solid #D4D6DD;
+        padding: 10px 20px;
+       
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+            position: sticky;
+            top: 40px;
+
+            li {
+                margin-bottom: 5px;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    padding: 10px;
+                    color: #000;
+                    background-color: transparent;
+                    transition: 0.3s all ease;
+                    font-size: 17px;
+                    border-radius: 8px;
+
+                    span {
+                        margin-right: 10px;
+                    }
+
+                    &:hover {
+                        background-color: #eee;
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    .col_left {
+        flex: 1 0;
+        width: 100%;
+        @include lg {
+            padding: 40px 40px 30px;
+        }
+    }
+
+    &_header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-bottom: 1px solid #D4D6DD;
+        background-color: #fff;
+        z-index: 1111;
+    }
+}
+
+.layout {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 2px 5px 5px rgb(0 0 0 / 6%);
+    margin-bottom: 35px;
+
+    @include lg {
+        padding: 20px;
+
+    }
+
+    table {
+        thead {
+            th {
+                background-color: #FAFAFA;
+            }
+        }
+        td {
+            vertical-align: middle;
+        }
+        tr {
+            border-bottom: 1px solid #eee;
+        }
+    }
+}
